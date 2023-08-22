@@ -1,0 +1,8 @@
+services:
+digital-wallet-app:
+Image: uk.icr.io/wallet-demo/wallet@sha256:815f870558e3d29ef84590c85902ade3a450e3d77fbb484ba52765b63db32f17
+Ports: "8443:443"
+    environment:
+      - WALLET_NAME:lena
+    volumes:
+      - /var/hyperprotect/:/var/hyperprotect/:ro
